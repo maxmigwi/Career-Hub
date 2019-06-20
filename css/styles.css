@@ -1,0 +1,88 @@
+.body {
+  background-color: white;
+}
+
+.landing {
+  background-color: #276d9b;
+  margin: 1em;
+}
+
+.image {
+ width: 100%;
+ padding: 40px 250px;
+}
+
+.nav {
+  width: 100%;
+  margin: 2em;
+  }
+  
+  .nav a{
+    color:white;
+    font-size: 20px;
+    margin: 1em;
+  }
+  .navTitle:hover {
+      color: black;
+  }
+  
+.imagelogo {
+  height: 10vh;
+}
+
+.about {
+  background-color: #276d9b;
+  text-align: center;
+  margin: 1em;
+  color: white;
+  font-size: 20px; 
+}
+
+.about p {
+  margin: 2em;
+}
+
+.user-form {
+  background-color: #276d9b;
+}
+
+.user-form form {
+  margin: 2em;
+}
+
+.form-submit {
+  margin: auto;
+}
+
+.categories {
+  background-color: #276d9b;
+  height: 60vh;
+  text-align: center;
+  margin: 1em;
+  color: white;
+  
+}
+.career {
+  align-items: center;
+  justify-content: center;
+}
+
+.categories select {
+  margin: auto;
+  width: 60%;
+}
+
+.contacts {
+  background-color: #276d9b;
+  text-align: center;
+  margin: 1em;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactscontactscontent {
+  margin: 2em;
+}
+
