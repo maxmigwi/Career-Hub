@@ -123,18 +123,34 @@
   </div>
   <script>
     $(document).ready(function(sam) {
-      $("#submitbutton").click(function(sam) {
-        sam.preventDefault()
-        var client = document.getElementById('firstName').value;
-        alert(' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
-        return (' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
-      });
+
       var firstName = document.getElementById('firstName');
       var lastName =  document.getElementById('lastName');
       var email = document.getElementById('email');
       var id = document.getElementById('id');
-      var certifi
+      var certNo. = document.getElementById('certNo.');
 
+if(firstName.length < 2 || firstName.length == 0){
+  alert("input a valid name");
+}
+if(lastName.length < 2 || lastName.length == 0){
+  alert("input a valid name");
+}
+if(email.length < 2){
+  alert("invalid email");
+}
+if(id.length < 6){
+  alert("invalid id");
+}
+if(certNo.length < 1);
+prompt("invalid certNo.")
+
+$("#submitbutton").click(function(sam) {
+  sam.preventDefault()
+  var client = document.getElementById('firstName').value;
+  alert(' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
+  return (' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
+});
     });
   </script>
 
