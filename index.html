@@ -2,128 +2,162 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- landing -->
-        <div class="landing row">
-          <img src="images/logo.png" alt="logo" class="imagelogo img-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- landing -->
+                <div id="landing" class="landing row">
+                    <div class="nav">
+                        <a class="navTitle" href="#landing">Home</a>
+                        <a class="navTitle" href="#about">About Us</a>
+                        <a class="navTitle" href="#user-form">Job Seekers</a>
+                        <a class="navTitle" href="#categories">Hiring Partners</a>
+                        <a class="navTitle" href="#contacts">Contacts</a>
+                    </div>
+
+                    <div class="image row">
+                        <img src="images/logo.png" alt="logo" class="imagelogo img-fluid">
+                    </div>
+                </div>
+
+                <!-- about -->
+
+                <div id="about" class="about row">
+                    <div class="col-md-12">
+                        <div class="nav">
+                            <a class="navTitle" href="#landing">Home</a>
+                            <a class="navTitle" href="#about">About Us</a>
+                            <a class="navTitle" href="#user-form">Job Seekers</a>
+                            <a class="navTitle" href="#categories">Hiring Partners</a>
+                            <a class="navTitle" href="#contacts">Contacts</a>
+                        </div>
+                        <div class="aboutcontent">
+                            <p>
+                                <h1>About Us</h1>
+                                CareerHub is Kenyas number one career website that connects graduates and employers.<br>
+                                We pride ourselves to having connected over 2000 graduates in various fields to their
+                                potential
+                                employers who turned out to be a perfect match.<br>
+                                What sets us apart from other career sites is that we have a pool of graduates <br>
+                                who we have their credentials which are available at a click of a button.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Job Seekers Form -->
+                <div id="user-form" class="row user-form">
+                    <div class="col-md-12">
+                        <div class="nav">
+                            <a class="navTitle" href="#landing">Home</a>
+                            <a class="navTitle" href="#about">About Us</a>
+                            <a class="navTitle" href="#user-form">Job Seekers</a>
+                            <a class="navTitle" href="#categories">Hiring Partners</a>
+                            <a class="navTitle" href="#contacts">Contacts</a>
+                        </div>
+                        <div class="fillform">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="FirstName" class="form-control" id="inputFirstName"
+                                            placeholder="FirstName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="LastName" class="form-control" id="inputLastName"
+                                            placeholder="LastName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputID" placeholder="ID">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputCertificate"
+                                        placeholder="Certificate No.">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <select class="form-control">
+                                            <option selected>Job Categories</option>
+                                            <option>Software Developers</option>
+                                            <option>Engineers</option>
+                                            <option>Lawyers</option>
+                                            <option>Business Administrators</option>
+                                            <option>Teachers</option>
+                                            <option>Pharmacists</option>
+                                            <option>Nurses</option>
+                                            <option>Accountants</option>
+                                            <option>Architects</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <select class="form-control">
+                                            <option selected>Institutions</option>
+                                            <option>Moringa School</option>
+                                            <option>University of Nairobi</option>
+                                            <option>JKUAT</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="submit" class="btn btn-primary form-submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="categories" class="categories row">
+                    <div class="nav">
+                        <a class="navTitle" href="#landing">Home</a>
+                        <a class="navTitle" href="#about">About Us</a>
+                        <a class="navTitle" href="#user-form">Job Seekers</a>
+                        <a class="navTitle" href="#categories">Hiring Partners</a>
+                        <a class="navTitle" href="#contacts">Contacts</a>
+                    </div>
+                    <select class="career form-control">
+                        <option selected>Job Categories</option>
+                        <option>Software Developers</option>
+                        <option>Engineers</option>
+                        <option>Lawyers</option>
+                        <option>Business Administrators</option>
+                        <option>Teachers</option>
+                        <option>Pharmacists</option>
+                        <option>Nurses</option>
+                        <option>Accountants</option>
+                        <option>Architects</option>
+                    </select>
+                </div>
+                <div id="contacts" class="contacts row">
+                    <div class="nav">
+                        <a class="navTitle" href="#landing">Home</a>
+                        <a class="navTitle" href="#about">About Us</a>
+                        <a class="navTitle" href="#user-form">Job Seekers</a>
+                        <a class="navTitle" href="#categories">Hiring Partners</a>
+                        <a class="navTitle" href="#contacts">Contacts</a>
+                    </div>
+                    <div class="contactscontent">
+                        <h1>Contacts</h1>
+                        <p> For any queries or clarifications please feel free to call us on:<br> 0722434353/
+                            07214353466 <br>or<br> Email :info@careerHub.co.ke</p>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
         </div>
-
-        <!-- about -->
-
-        <div class="about row">
-          <div class="col-md-12">
-            <p>
-              <h1>About Us</h1>
-              CareerHub is Kenyas number one career website that connects graduates and employers.<br>
-              We pride ourselves to having connected over 2000 graduates in various fields to their potential
-              employers who turned out to be a perfect match.<br>
-              What sets us apart from other career sites is that we have a pool of graduates <br>
-              who we have their credentials which are available at a click of a button.
-            </p>
-          </div>
-        </div>
-        <!-- Job Seekers Form -->
-        <div class="row user-form">
-          <div class="col-md-12">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input type="name" class="form-co$(document).ready(function(){
-                    $("form#show").submit(function(event) {
-                  
-                      event.preventDefault();
-                      var name = $.trim($('#name').val());
-                      var email = $.trim($('#email').val());
-                      if ((name === '') || (email === '')) {
-                        alert('If you submit,you should enter at least name and email.');//checks if either field is empty and alerts user
-                        return false;
-                      } else {
-                        alert("We have received your message.Thank you for reaching out for us");
-                        $("#show")[0].reset();control" >
-
-
-                       
-                </div>
-
-                <div class ="form-group">
-                  <input type="first name" class="form-control" id=" inputPassword4" placeholder="lastname">
-              </div>
-                <div class="form-group col-md-6">
-                  <input type="last name" class="form-control" id="inputPassword4" placeholder="LastName">
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputAddress" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputAddress" placeholder="ID">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Certificate No.">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <select class="form-control">
-                    <option selected>Job Categories</option>
-                    <option>Software Developers</option>
-                    <option>Engineers</option>
-                    <option>Lawyers</option>
-                    <option>Business Administrators</option>
-                    <option>Teachers</option>
-                    <option>Pharmacists</option>
-                    <option>Nurses</option>
-                    <option>Accountants</option>
-                    <option>Architects</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <select class="form-control">
-                    <option selected>Institutions</option>
-                    <option>Moringa School</option>
-                    <option>University of Nairobi</option>
-                    <option>JKUAT</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-row">
-                <button type="submit" class="btn btn-primary form-submit">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="categories row">
-          <select class="form-control">
-            <option selected>Job Categories</option>
-            <option>Software Developers</option>
-            <option>Engineers</option>
-            <option>Lawyers</option>
-            <option>Business Administrators</option>
-            <option>Teachers</option>
-            <option>Pharmacists</option>
-            <option>Nurses</option>
-            <option>Accountants</option>
-            <option>Architects</option>
-          </select>
-        
-          </div>
-          </div>
-
-        <!-- end -->
-      </div>
     </div>
-  </div>
 
 
 

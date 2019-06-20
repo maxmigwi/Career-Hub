@@ -1,20 +1,33 @@
 .body {
   background-color: white;
-
-
 }
 
 .landing {
   background-color: #276d9b;
-  height: 80vh;
   margin: 1em;
-  justify-content: center;
-  align-items: center;
- 
 }
 
+.image {
+ width: 100%;
+ padding: 40px 250px;
+}
+
+.nav {
+  width: 100%;
+  margin: 2em;
+  }
+  
+  .nav a{
+    color:white;
+    font-size: 20px;
+    margin: 1em;
+  }
+  .navTitle:hover {
+      color: black;
+  }
+  
 .imagelogo {
-  height: 50vh;
+  height: 10vh;
 }
 
 .about {
@@ -22,8 +35,7 @@
   text-align: center;
   margin: 1em;
   color: white;
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
 
 .about p {
@@ -48,6 +60,9 @@
   text-align: center;
   margin: 1em;
   color: white;
+  
+}
+.career {
   align-items: center;
   justify-content: center;
 }
@@ -57,9 +72,26 @@
   width: 60%;
 }
 
+<<<<<<< HEAD
 
 table, th, td {
                   
   border: 15px solid white;
      border-collapse: collapse;
     }
+=======
+.contacts {
+  background-color: #276d9b;
+  text-align: center;
+  margin: 1em;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactscontactscontent {
+  margin: 2em;
+}
+
+>>>>>>> upstream/master
