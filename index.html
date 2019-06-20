@@ -48,10 +48,10 @@
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="Email" placeholder="Email">
+                <input type="text" class="form-control" id="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="ID" placeholder="ID">
+                <input type="text" class="form-control" id="iD" placeholder="ID">
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" id="certNo." placeholder="Certificate No.">
@@ -87,33 +87,54 @@
             </form>
           </div>
         </div>
-        <div class="categories row">
-          <select class="form-control">
-            
 
+        <option selected>Job Categories</option>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">ID</th>
+              <th scope="col">Certificate No.</th>
+            </tr>
+          </thead>
+          <tbody id="pizza">
+            <tr>
+              <th scope="row">1</th>
+              <td id="a"></td>
+              <td id="b"></td>
+              <td id="c"></td>
+              <td id="d"></td>
+            </tr>
+          </tbody>
+        </table>
 
-        </div>
-
-        <!-- end -->
       </div>
+
+      <!-- end -->
     </div>
+  </div>
   </div>
 
 
 
   <!-- end -->
   </div>
-  </div>
-  </div>
   <script>
     $(document).ready(function(sam) {
       $("#submitbutton").click(function(sam) {
         sam.preventDefault()
-        var client = document.getElementById('inputEmail4').value;
+        var client = document.getElementById('firstName').value;
         alert(' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
         return (' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
       });
-      var
+      var firstName = document.getElementById('firstName');
+      var lastName =  document.getElementById('lastName');
+      var email = document.getElementById('email');
+      var id = document.getElementById('id');
+      var certifi
+
     });
   </script>
 
