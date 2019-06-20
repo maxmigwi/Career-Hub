@@ -16,17 +16,8 @@
     <div class="row">
       <div class="col-md-12">
         <!-- landing -->
-<<<<<<< HEAD
-        <div class="landing">
-          <div class="logo">
-            <img src="images/logo.png" alt="logo" class="imagelogo">
-
-          </div>
-
-=======
         <div class="landing row">
           <img src="images/logo.png" alt="logo" class="imagelogo img-fluid">
->>>>>>> upstream/master
         </div>
 
         <!-- about -->
@@ -49,10 +40,28 @@
             <form>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="FirstName">
+                  <input type="name" class="form-co$(document).ready(function(){
+                    $("form#show").submit(function(event) {
+                  
+                      event.preventDefault();
+                      var name = $.trim($('#name').val());
+                      var email = $.trim($('#email').val());
+                      if ((name === '') || (email === '')) {
+                        alert('If you submit,you should enter at least name and email.');//checks if either field is empty and alerts user
+                        return false;
+                      } else {
+                        alert("We have received your message.Thank you for reaching out for us");
+                        $("#show")[0].reset();control" >
+
+
+                       
                 </div>
+
+                <div class ="form-group">
+                  <input type="first name" class="form-control" id=" inputPassword4" placeholder="lastname">
+              </div>
                 <div class="form-group col-md-6">
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="LastName">
+                  <input type="last name" class="form-control" id="inputPassword4" placeholder="LastName">
                 </div>
               </div>
               <div class="form-group">
@@ -93,16 +102,6 @@
               </div>
             </form>
           </div>
-<<<<<<< HEAD
-          <div>
-          </div>
-
-        </div>
-        <!-- job categorises -->
-        <div class="categories">
-
-        </div>
-=======
         </div>
         <div class="categories row">
           <select class="form-control">
@@ -117,13 +116,15 @@
             <option>Accountants</option>
             <option>Architects</option>
           </select>
-        </div>
+        
+          </div>
+          </div>
 
->>>>>>> upstream/master
         <!-- end -->
       </div>
     </div>
   </div>
+
 
 
 
