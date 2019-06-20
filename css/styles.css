@@ -7,11 +7,9 @@
 .landing {
   background-color: #276d9b;
   height: 80vh;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding: 130px 130px;
   margin: 1em;
+  justify-content: center;
+  align-items: center;
  
 }
 
@@ -21,40 +19,45 @@
 
 .about {
   background-color: #276d9b;
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
   text-align: center;
   margin: 1em;
-  padding: 2em;
-  padding-top: 5em;
   color: white;
   font-size: 20px;
+  
 }
 
-.form {
+.about p {
+  margin: 2em;
+}
+
+.user-form {
   background-color: #276d9b;
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  margin: 1em;
-
 }
 
-.form-row{
-  width: 60%;
-  padding: 2em;
-}
-
-#submitbutton {
-  margin: 5em;
+.user-form form {
+  margin: 2em;
 }
 #resetbutton {
   margin: 5em;
 
 }
 
+.form-submit {
+  margin: auto;
+}
 
+.categories {
+  background-color: #276d9b;
+  height: 60vh;
+  text-align: center;
+  margin: 1em;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
 
-
+.categories select {
+  margin: auto;
+  width: 60%;
+}
+ 
