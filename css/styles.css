@@ -42,12 +42,14 @@
   margin: 2em;
 }
 
-.user-form {
+#mc_embed_signup {
   background-color: #276d9b;
+  text-align: center;
+  margin: 2em;
 }
 
-.user-form form {
-  margin: 2em;
+.rowname {
+  margin: 1em;
 }
 
 .form-submit {
@@ -71,6 +73,11 @@
   margin: auto;
   width: 60%;
 }
+/*  
+#disp-1{
+  display: none;
+} */
+=======
 
 .contacts {
   background-color: #276d9b;
