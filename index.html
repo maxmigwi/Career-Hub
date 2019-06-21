@@ -37,7 +37,7 @@
         </div>
         <!-- Job Seekers Form -->
         <div class="row user-form">
-          <div class="col-md-12">
+          <div class="col-md-12 col-1">
             <form id="input">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -83,33 +83,35 @@
 
               <div class="form-row">
                 <button id="submitbutton" class="btn btn-primary form-submit" onclick="sam()">Submit</button>
+
               </div>
             </form>
+
           </div>
         </div>
-      <div>
-         <h1>Availabe Graduands</h1>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">First Name</th>
-              <th scope="col">Last Name</th>
-              <th scope="col">Email</th>
-              <th scope="col">ID</th>
-              <th scope="col">Certificate No.</th>
-            </tr>
-          </thead>
-          <tbody id="pizza">
-            <tr>
-              <th scope="row">1</th>
-              <td id="a"></td>
-              <td id="b"></td>
-              <td id="c"></td>
-              <td id="d"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div id="hiden">
+          <h1>Availabe Graduands</h1>
+          <table class="table" id="disp-1">
+            <thead>
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">ID</th>
+                <th scope="col">Certificate No.</th>
+              </tr>
+            </thead>
+            <tbody id="pizza">
+              <tr>
+                <th scope="row">1</th>
+                <td id="a"></td>
+                <td id="b"></td>
+                <td id="c"></td>
+                <td id="d"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       </div>
 
@@ -136,39 +138,42 @@
 
       var y = firstName;
 
-      $(document).ready(function(){
-        if (y == "") {
+      if (y == "") {
         alert("input a valid name");
-      }
-      else if (lastName.length < 2 || lastName.length == 0) {
+      } else if (lastName.length < 2 || lastName.length == 0) {
         alert("input a valid name");
-      }
-      else if (email.length < 2) {
+      } else if (email.length < 2) {
         alert("invalid email");
-      }
-      else if (identification.length < 5) {
+      } else if (identification.length < 5) {
         alert("invalid id");
+      } else if (certNo.length < 1) {
+        alert("invalid certNo.");
+      } else if (firstName.length > 2 && lastName.length > 2 && identification.length > 5 && certNo.length > 1) {
+        $("#submitbutton").click(function (sam) {
+          sam.preventDefault()
+          var client = document.getElementById('firstName').value;
+          alert(' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' +
+            ' Feel free to reach out to us anytime');
+          return (' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' +
+            ' Feel free to reach out to us anytime');
+        });
+
       }
-      else if (certNo.length < 1){
-      alert("invalid certNo.");
-    }
-    else if (firstName.length > 2 && lastName.length > 2 && identification.length > 5 && certNo.length > 1) { 
-     $("#submitbutton").click(function(hen) {
-       hen.preventDefault()
-       var client = document.getElementById('nameDetail').value;
-       alert(' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
-       return(' Dear ' + ' esteemed ' + client + ' we have received your message successfully. ' + ' Feel free to reach out to us anytime');
-     });
-   
-    }
-    $(".table").hide();
-    
-      });
+      $("#hidden").hide();
+      $(".table").hide();
+
+    };
+
+    function person(firstName, lastName, email, identififation, certificateNo) {
+      this.firstName=firstName;
+      this.lastName=lastName;
+      this.email;
+      this.identification;
+      this.certificateNo;
     }
 
 
     // };
-
   </script>
 
 
