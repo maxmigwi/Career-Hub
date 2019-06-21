@@ -30,16 +30,14 @@
   margin: 2em;
 }
 
-.user-form {
+#mc_embed_signup {
   background-color: #276d9b;
-}
-
-.user-form form {
+  text-align: center;
   margin: 2em;
 }
-#resetbutton {
-  margin: 5em;
 
+.rowname {
+  margin: 1em;
 }
 
 .form-submit {
