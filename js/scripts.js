@@ -17,16 +17,16 @@ function myFunction() {
       } else {
         alert("We have received your message.Thank you for reaching out for us");
         $("#show")[0].reset();
+      }
 
-$(document).ready(function(){
-  $(".btn1").click(function(){
-    $("p").hide();
-  });
-  $(".btn2").click(function(){
-    $("p").show();
-  });
-});
-<p>This is a paragraph.</p>
+    $(".btn1").click(function(){
+      $("p").hide();
+    });
 
-<button class="btn1">Hide</button>
-<button class="btn2">Show</button>
+    $(".btn2").click(function(){
+      $("p").show();
+    });
+
+  })
+})
+}

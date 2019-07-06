@@ -70,8 +70,8 @@
 }
 
 .categories select {
-  margin: auto;
-  width: 60%;
+  margin:auto; 
+  width:60%
 }
 /*  
 #disp-1{
@@ -91,14 +91,19 @@ table, th, td {
   background-color: #276d9b;
   text-align: center;
   margin: 1em;
-  color: white;
+  color:white;
   font-size: 20px;
   align-items: center;
   justify-content: center;
 }
 
-.contactscontactscontent {
-  margin: 2em;
+.contactscontent {
+
+  margin: 1em;
+ background-color:black;
+color: white;
+font-size:20px
 }
+
 
 
